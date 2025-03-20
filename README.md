@@ -66,16 +66,16 @@ Submissions will be evaluated based on F1 score, which are standard measures of 
 
 Let GT = Ground truth value for a sample and OUT be output prediction from the model for a sample. Then we classify the predictions into one of the 4 classes with the following logic:
 
-True Positives - If OUT != "" and GT != "" and OUT == GT
-False Positives - If OUT != "" and GT != "" and OUT != GT
-False Positives - If OUT != "" and GT == ""
-False Negatives - If OUT == "" and GT != ""
-True Negatives - If OUT == "" and GT == ""
+1. True Positives - If OUT != "" and GT != "" and OUT == GT
+2. False Positives - If OUT != "" and GT != "" and OUT != GT
+3. False Positives - If OUT != "" and GT == ""
+4. False Negatives - If OUT == "" and GT != ""
+5. True Negatives - If OUT == "" and GT == ""
 Then, F1 score = 2PrecisionRecall/(Precision + Recall) where:
 
-Precision = True Positives/(True Positives + False Positives)
-Recall = True Positives/(True Positives + False Negatives)
-Submission File
+1. Precision = True Positives/(True Positives + False Positives)
+2. Recall = True Positives/(True Positives + False Negatives)
+## Submission File
 Upload a test_out.csv file in the Portal with the exact same formatting as sample_test_out.csv
 
 ## Appendix
